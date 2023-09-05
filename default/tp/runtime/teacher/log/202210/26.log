@@ -1,0 +1,8 @@
+[2022-10-26T16:10:43+08:00][sql] CONNECT:[ UseTime:0.000376s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2022-10-26T16:10:43+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.001319s ]
+[2022-10-26T16:10:43+08:00][sql] SELECT `teacher_name`,`teacher_title`,`teacher_avatar`,`detail` FROM `teacher` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000243s ]
+[2022-10-26T16:10:43+08:00][sql] SHOW FULL COLUMNS FROM `course` [ RunTime:0.001085s ]
+[2022-10-26T16:10:43+08:00][sql] SELECT * FROM `course` WHERE  `about_instructor` LIKE '%2%' [ RunTime:0.000335s ]
+[2022-10-26T16:10:43+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.000944s ]
+[2022-10-26T16:10:43+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000301s ]
+[2022-10-26T16:10:43+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000242s ]

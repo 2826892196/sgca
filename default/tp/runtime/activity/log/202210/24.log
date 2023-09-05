@@ -1,0 +1,12 @@
+[2022-10-24T14:16:45+08:00][sql] CONNECT:[ UseTime:0.000376s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2022-10-24T14:16:45+08:00][sql] SHOW FULL COLUMNS FROM `information` [ RunTime:0.001288s ]
+[2022-10-24T14:16:45+08:00][sql] SELECT * FROM `information` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000323s ]
+[2022-10-24T14:16:45+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.000923s ]
+[2022-10-24T14:16:45+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000347s ]
+[2022-10-24T14:16:45+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000239s ]
+[2022-10-24T21:18:58+08:00][sql] CONNECT:[ UseTime:0.000382s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2022-10-24T21:18:58+08:00][sql] SHOW FULL COLUMNS FROM `information` [ RunTime:0.001230s ]
+[2022-10-24T21:18:58+08:00][sql] SELECT * FROM `information` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000275s ]
+[2022-10-24T21:18:58+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.000880s ]
+[2022-10-24T21:18:58+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000242s ]
+[2022-10-24T21:18:58+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000199s ]

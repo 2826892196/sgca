@@ -1,0 +1,12 @@
+[2023-08-29T11:00:00+08:00][sql] CONNECT:[ UseTime:0.000432s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2023-08-29T11:00:00+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.001340s ]
+[2023-08-29T11:00:00+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000285s ]
+[2023-08-29T11:00:00+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000204s ]
+[2023-08-29T11:11:20+08:00][sql] CONNECT:[ UseTime:0.000483s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2023-08-29T11:11:20+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.001461s ]
+[2023-08-29T11:11:20+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000276s ]
+[2023-08-29T11:11:20+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000247s ]
+[2023-08-29T12:29:57+08:00][sql] CONNECT:[ UseTime:0.000403s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2023-08-29T12:29:57+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.001542s ]
+[2023-08-29T12:29:57+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000296s ]
+[2023-08-29T12:29:57+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000249s ]

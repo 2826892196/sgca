@@ -1,0 +1,26 @@
+[2022-11-16T06:26:35+08:00][sql] CONNECT:[ UseTime:0.000390s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2022-11-16T06:26:35+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.001223s ]
+[2022-11-16T06:26:35+08:00][sql] SELECT `teacher_name`,`teacher_title`,`teacher_avatar`,`detail` FROM `teacher` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000266s ]
+[2022-11-16T06:26:35+08:00][sql] SHOW FULL COLUMNS FROM `course` [ RunTime:0.001080s ]
+[2022-11-16T06:26:35+08:00][sql] SELECT * FROM `course` WHERE  `about_instructor` LIKE '%3%' [ RunTime:0.000322s ]
+[2022-11-16T06:26:35+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.000901s ]
+[2022-11-16T06:26:35+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000252s ]
+[2022-11-16T06:26:35+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000237s ]
+[2022-11-16T11:47:01+08:00][sql] CONNECT:[ UseTime:0.000400s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2022-11-16T11:47:01+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.001218s ]
+[2022-11-16T11:47:01+08:00][sql] SELECT `id`,`teacher_name`,`teacher_avatar`,`Introduction` FROM `teacher` [ RunTime:0.000222s ]
+[2022-11-16T11:47:01+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.001001s ]
+[2022-11-16T11:47:01+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000261s ]
+[2022-11-16T11:47:01+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000217s ]
+[2022-11-16T11:50:50+08:00][sql] CONNECT:[ UseTime:0.000476s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2022-11-16T11:50:50+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.001284s ]
+[2022-11-16T11:50:50+08:00][sql] SELECT `id`,`teacher_name`,`teacher_avatar`,`Introduction` FROM `teacher` [ RunTime:0.000256s ]
+[2022-11-16T11:50:50+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.001004s ]
+[2022-11-16T11:50:50+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000309s ]
+[2022-11-16T11:50:50+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000249s ]
+[2022-11-16T13:17:01+08:00][sql] CONNECT:[ UseTime:0.000415s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2022-11-16T13:17:01+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.001272s ]
+[2022-11-16T13:17:01+08:00][sql] SELECT `id`,`teacher_name`,`teacher_avatar`,`Introduction` FROM `teacher` [ RunTime:0.000232s ]
+[2022-11-16T13:17:01+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.000925s ]
+[2022-11-16T13:17:01+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000275s ]
+[2022-11-16T13:17:01+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000244s ]

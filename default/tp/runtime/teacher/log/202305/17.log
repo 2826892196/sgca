@@ -1,0 +1,24 @@
+[2023-05-17T18:03:09+08:00][sql] CONNECT:[ UseTime:0.000415s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2023-05-17T18:03:09+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.001215s ]
+[2023-05-17T18:03:09+08:00][sql] SELECT `id`,`teacher_name`,`teacher_avatar`,`Introduction` FROM `teacher` [ RunTime:0.000221s ]
+[2023-05-17T18:03:09+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.000985s ]
+[2023-05-17T18:03:09+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000297s ]
+[2023-05-17T18:03:09+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000228s ]
+[2023-05-17T18:11:22+08:00][sql] CONNECT:[ UseTime:0.000363s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2023-05-17T18:11:22+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.001346s ]
+[2023-05-17T18:11:22+08:00][sql] SELECT `id`,`teacher_name`,`teacher_avatar`,`Introduction` FROM `teacher` [ RunTime:0.000247s ]
+[2023-05-17T18:11:22+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.000992s ]
+[2023-05-17T18:11:22+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000277s ]
+[2023-05-17T18:11:22+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000210s ]
+[2023-05-17T19:41:37+08:00][sql] CONNECT:[ UseTime:0.000431s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2023-05-17T19:41:37+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.001337s ]
+[2023-05-17T19:41:37+08:00][sql] SELECT `id`,`teacher_name`,`teacher_avatar`,`Introduction` FROM `teacher` [ RunTime:0.000266s ]
+[2023-05-17T19:41:37+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.001040s ]
+[2023-05-17T19:41:37+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000307s ]
+[2023-05-17T19:41:37+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000252s ]
+[2023-05-17T19:48:49+08:00][sql] CONNECT:[ UseTime:0.000439s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2023-05-17T19:48:49+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.001208s ]
+[2023-05-17T19:48:49+08:00][sql] SELECT `id`,`teacher_name`,`teacher_avatar`,`Introduction` FROM `teacher` [ RunTime:0.000234s ]
+[2023-05-17T19:48:49+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.000880s ]
+[2023-05-17T19:48:49+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000273s ]
+[2023-05-17T19:48:49+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000207s ]

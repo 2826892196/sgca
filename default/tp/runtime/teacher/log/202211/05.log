@@ -1,0 +1,22 @@
+[2022-11-05T21:25:42+08:00][sql] CONNECT:[ UseTime:0.000407s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2022-11-05T21:25:42+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.001268s ]
+[2022-11-05T21:25:42+08:00][sql] SELECT `teacher_name`,`teacher_title`,`teacher_avatar`,`detail` FROM `teacher` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000261s ]
+[2022-11-05T21:25:42+08:00][sql] SHOW FULL COLUMNS FROM `course` [ RunTime:0.001390s ]
+[2022-11-05T21:25:42+08:00][sql] SELECT * FROM `course` WHERE  `about_instructor` LIKE '%2%' [ RunTime:0.000428s ]
+[2022-11-05T21:25:42+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.000955s ]
+[2022-11-05T21:25:42+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000310s ]
+[2022-11-05T21:25:42+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000295s ]
+[2022-11-05T21:44:03+08:00][sql] CONNECT:[ UseTime:0.000443s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2022-11-05T21:44:03+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.001249s ]
+[2022-11-05T21:44:03+08:00][sql] SELECT `id`,`teacher_name`,`teacher_avatar`,`Introduction` FROM `teacher` [ RunTime:0.000263s ]
+[2022-11-05T21:44:03+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.000966s ]
+[2022-11-05T21:44:03+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000289s ]
+[2022-11-05T21:44:03+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000266s ]
+[2022-11-05T22:13:25+08:00][sql] CONNECT:[ UseTime:0.000403s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2022-11-05T22:13:25+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.001282s ]
+[2022-11-05T22:13:25+08:00][sql] SELECT `teacher_name`,`teacher_title`,`teacher_avatar`,`detail` FROM `teacher` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000254s ]
+[2022-11-05T22:13:25+08:00][sql] SHOW FULL COLUMNS FROM `course` [ RunTime:0.001077s ]
+[2022-11-05T22:13:25+08:00][sql] SELECT * FROM `course` WHERE  `about_instructor` LIKE '%2%' [ RunTime:0.000365s ]
+[2022-11-05T22:13:25+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.000970s ]
+[2022-11-05T22:13:25+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000255s ]
+[2022-11-05T22:13:25+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000210s ]

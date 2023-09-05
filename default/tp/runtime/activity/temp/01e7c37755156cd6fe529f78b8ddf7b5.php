@@ -1,0 +1,531 @@
+<?php /*a:1:{s:67:"/home/wwwroot/default/tp/app/activity/view/index/activity_list.html";i:1665296675;}*/ ?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> 寻品咖啡资讯 | 北京寻品咖啡有限责任公司 seek-gift,北京咖啡师培训，上海咖啡师培训</title>
+    <meta name="keywords" content="寻品,寻品咖啡,寻品咖啡学院,咖啡师姜涛,上海咖啡师培训,北京咖啡师培训,咖啡培训机构,咖啡拉花培训,咖啡店加盟,中国sca咖啡认证培训">
+    <meta name="description" content="seek-gift|寻品咖啡，位于北京和上海的咖啡培训，是一家专注于咖啡创业规划与咖啡从业者职业生涯规划的创新型咖啡培训机构。由sca认证老师授课，在SCA精品咖啡协会的认证技能课程体系中加入不同职岗的综合素质训练。">
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/x-icon" href="/static/Image/icon.svg" />
+
+    <link rel="stylesheet" href="/static/css/base.css" type="text/css">
+    <style>
+        .nav-item:nth-child(6) {
+            color: white;
+            background: #1B44DB;
+            font-family: SourceHanSansCN-Medium;
+            font-size: 0.875rem;
+            padding: 0 1.25rem;
+            border-radius: 0.937rem;
+            margin: 0 1%;
+        }
+        
+        .new_activity {
+            background: #1B44DB;
+            margin: 3.8% 4.5% 3.3%;
+            width: 91%;
+            overflow: hidden;
+        }
+        
+        .new_activity_img {
+            float: right;
+            width: 40%;
+            margin-left: 4.9%;
+        }
+        
+        .new_activity_time {
+            font-family: SourceHanSansCN-Normal;
+            font-size: 1.125rem;
+            color: #FFFFFF;
+            font-weight: 400;
+            margin-top: 1.25rem;
+            margin-left: 2.9%;
+        }
+        
+        .new_activity_title {
+            font-family: SourceHanSansCN-Medium;
+            font-size: 1.375rem;
+            color: #FFFFFF;
+            font-weight: 500;
+            margin: 0.562rem 2.9% 0 2.9%;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+        }
+        
+        .new_activity_detail {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+            overflow: hidden;
+            font-family: SourceHanSansCN-Normal;
+            font-size: 0.9375rem;
+            line-height: 1.7rem;
+            color: #FFFFFF;
+            /* font-weight: 400; */
+            margin-left: 2.9%;
+            margin-top: 1rem;
+            margin-bottom: 2%;
+        }
+        
+        .activity_nav {
+            margin: 0 7.6%;
+        }
+        
+        .activity_nav ul {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        
+        .activity_nav ul li {
+            font-family: SourceHanSansCN-Medium;
+            font-size: 1rem;
+            color: #121519;
+            border: .0625rem solid #979797;
+            border-radius: 1.375rem;
+            margin-right: 1%;
+            margin-bottom: 1%;
+            padding: 0 1.1875rem;
+        }
+        
+        .selected {
+            font-family: SourceHanSansCN-Medium;
+            font-size: 1rem;
+            background: #0b0b0b;
+            border-radius: 1.375rem;
+            margin-right: 1%;
+            margin-bottom: 1%;
+            padding: 0 1.1875rem;
+        }
+        
+        .selected a {
+            color: white;
+        }
+        
+        .activity_img {
+            width: 25%;
+        }
+        
+        .activity_line {
+            width: 84.8%;
+            height: 0.0625rem;
+            margin: 1.9% 7.6%;
+            background: #DDDDDD;
+        }
+        
+        .activity {
+            display: flex;
+            margin: 0 7.6%;
+            margin-bottom: 1.9%;
+        }
+        
+        .activity:hover .activity_time_child {
+            background: #1B44DB;
+        }
+        
+        .activity:hover .activity_time_month {
+            color: white;
+        }
+        
+        .activity:hover .activity_time_year {
+            color: white;
+        }
+        
+        .activity:hover .activity_detail_title {
+            color: #1B44DB;
+        }
+        
+        .activity:hover .activity_detail_detail {
+            color: #1B44DB;
+        }
+        
+        .activity_time {
+            width: 15.5%;
+        }
+        
+        .activity_time_child {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #F1F5F8;
+            border-radius: 0.9375rem;
+            padding: 1%;
+        }
+        
+        .activity_time_month {
+            font-family: SourceHanSansCN-Medium;
+            font-size: 1.875rem;
+            color: #656565;
+            font-weight: 500;
+        }
+        
+        .activity_time_year {
+            font-family: SourceHanSansCN-Medium;
+            font-size: 1.625rem;
+            color: #656565;
+        }
+        
+        .activity_detail {
+            width: 55.5%;
+            margin: auto 2% auto 2.5%;
+        }
+        
+        .activity_detail_title {
+            font-family: SourceHanSansCN-Medium;
+            font-size: 1.125rem;
+            color: #303030;
+            margin-bottom: 1%;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+        }
+        
+        .activity_detail_detail {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+            font-family: SourceHanSansCN-Normal;
+            font-size: 0.875rem;
+            color: #4A4A4A;
+        }
+        
+        @media only screen and (max-width: 1440px) {
+            .new_activity_detail {
+                -webkit-line-clamp: 4;
+            }
+        }
+        
+        @media only screen and (max-width: 1325px) {
+            .new_activity_detail {
+                -webkit-line-clamp: 4;
+            }
+        }
+        
+        @media only screen and (max-width: 1250px) {
+            .new_activity_detail {
+                -webkit-line-clamp: 4;
+                line-height: 1.5rem;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+        
+        @media only screen and (max-width: 1120px) {
+            .new_activity_title {
+                font-size: 1.125rem;
+            }
+            .new_activity_detail {
+                -webkit-line-clamp: 3;
+            }
+            .activity_time_month {
+                font-size: 1.75rem;
+            }
+            .activity_time_year {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media only screen and (max-width: 970px) {
+            .new_activity_title {
+                font-size: 1.0625rem;
+            }
+            .new_activity_detail {
+                -webkit-line-clamp: 3;
+            }
+            .activity_time_month {
+                font-size: 1.625rem;
+            }
+            .activity_time_year {
+                font-size: 1.375rem;
+            }
+        }
+        
+        @media only screen and (max-width: 990px) {
+            .new_activity_detail {
+                -webkit-line-clamp: 3;
+            }
+        }
+        
+        @media only screen and (max-width: 900px) {
+            .new_activity_time {
+                font-size: 0.875rem;
+            }
+            .new_activity_title {
+                font-size: 1.0625rem;
+            }
+            .new_activity_detail {
+                -webkit-line-clamp: 2;
+                font-size: 0.6rem;
+                line-height: 1.4rem;
+            }
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .nav-item:nth-child(6) {
+                font-family: SourceHanSansCN-Bold;
+                margin: 2.5% 1rem;
+                text-align: center;
+                font-size: 1.375rem;
+                color: white;
+                border: 0rem solid white;
+                border-radius: 0;
+            }
+            .new_activity_img {
+                float: none;
+                width: 100%;
+                margin-left: 0;
+            }
+            .new_activity_time {
+                font-size: 0.875rem;
+                margin-top: 0.625rem;
+            }
+            .new_activity_title {
+                font-size: 1.125rem;
+                margin-bottom: 0.562rem;
+                margin-top: 0.1rem;
+            }
+            .new_activity_detail {
+                -webkit-line-clamp: 3;
+                font-size: 0.625rem;
+                margin: 0.562rem 2.9% 1rem 2.9%;
+                line-height: 1.1rem;
+            }
+            .activity_nav ul li {
+                font-size: 0.625rem;
+            }
+            .selected {
+                font-size: 0.625rem;
+            }
+            .activity_time {
+                width: 20%;
+            }
+            .activity_time_child {
+                border-radius: 0.3125rem;
+                padding: 1%;
+            }
+            .activity_time_month {
+                font-size: 0.875rem;
+            }
+            .activity_time_year {
+                font-size: 0.75rem;
+            }
+            .activity_detail_title {
+                font-size: 0.75rem;
+            }
+            .activity_detail_detail {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                font-size: 0.625rem;
+                line-height: .8rem;
+                margin-top: .3rem;
+            }
+            .activity_img {
+                width: 30%;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="nav" style="background-image: url(/static/Image/activity_header.jpg);">
+        <div class="nav_detail">
+            <div class="pc_nav">
+                <img src="/static/Image/dark_logo.png">
+            </div>
+            <div class="phone_nav">
+                <a href="<?php echo url('/home'); ?>">
+                    <img src="/static/Image/dark_logo.png">
+                </a>
+                <button class="btn-nav">
+                  <span class="icon-bar top"></span>
+                  <span class="icon-bar middle"></span>
+                  <span class="icon-bar bottom"></span>
+                </button>
+            </div>
+
+            <div class="nav-content hideNav hidden">
+                <ul class="nav-list">
+                    <li class="nav-item" style="">
+                        <span class="item_skin">首页</span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="item_skin">寻品介绍</span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="item_skin">培训课程</span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="item_skin">讲师介绍</span>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <span class="item_skin">校区介绍</span>
+                    </li> -->
+                    <li class="nav-item">
+                        <span class="item_skin">活动资讯</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="nav_title">最新资讯</p>
+    </div>
+    <div class="base_detail">
+
+
+        <div class="new_activity">
+            <a href="<?php echo url('/activity/detail/'.$new_activity['id']); ?>">
+                <img class="new_activity_img" src="<?php echo htmlentities($new_activity['img']); ?>" alt="">
+                <!-- <img class="new_activity_img" src="/static/Image/testxxx.png" alt=""> -->
+                <p class="new_activity_time"><?php echo htmlentities($new_activity['time']); ?></p>
+                <p class="new_activity_title"><?php echo htmlentities($new_activity['title']); ?></p>
+                <p class="new_activity_detail"><?php echo htmlentities($new_activity['introduction']); ?></p>
+                <div style="clear: both;"></div>
+            </a>
+        </div>
+
+
+        <div class="activity_nav">
+            <ul>
+                <?php if(is_array($topic) || $topic instanceof \think\Collection || $topic instanceof \think\Paginator): $k = 0; $__LIST__ = $topic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$value): $mod = ($k % 2 );++$k;if($k == $topic_id): ?>
+                <li class="selected"><a href="<?php echo url('/activity/list/'.$value['id']); ?>"><?php echo htmlentities($value['name']); ?></a></li>
+                <?php else: ?>
+                <li><a class="" href="<?php echo url('/activity/list/'.$value['id']); ?>"><?php echo htmlentities($value['name']); ?></a></li>
+                <?php endif; ?> <?php endforeach; endif; else: echo "" ;endif; ?>
+            </ul>
+        </div>
+
+        <?php if(is_array($activity_list) || $activity_list instanceof \think\Collection || $activity_list instanceof \think\Paginator): if( count($activity_list)==0 ) : echo "" ;else: foreach($activity_list as $key=>$value): ?>
+        <div class="activity_line"></div>
+        <div class="activity">
+            <div class="activity_time">
+                <div class="activity_time_child">
+                    <p class="activity_time_month"><?php echo htmlentities($value['month']); ?></p>
+                    <p class="activity_time_year"><?php echo htmlentities($value['year']); ?></p>
+                </div>
+
+            </div>
+
+            <div class="activity_detail">
+                <a href="<?php echo url('/activity/detail/'.$value['id']); ?>">
+                    <p class="activity_detail_title"><?php echo htmlentities($value['title']); ?></p>
+                    <p class="activity_detail_detail"><?php echo htmlentities($value['introduction']); ?></p>
+                </a>
+            </div>
+            <img class="activity_img" src="<?php echo htmlentities($value['img']); ?>" alt="">
+            <!-- <img class="activity_img" src="/static/Image/testxxx.png" alt=""> -->
+
+        </div>
+        <?php endforeach; endif; else: echo "" ;endif; ?>
+    </div>
+
+    <div class="bottom">
+        <p class="bottom_slogn">Together, in discovering coffee.</p>
+        <div style="position:relative;">
+            <img class="bottom_logo" src="/static/Image/light_logo.png" alt="寻品咖啡学院,上海咖啡师培训,北京咖啡师培训,咖啡培训机构">
+            <a href="https://www.xiaohongshu.com/user/profile/5f020827000000000101f8c0?xhsshare=WeixinSession&appuid=5b7e0cb0499cb00001289cf1&apptime=1656386964"><img class="bottom_redbook" src="/static/Image/redbook.png" alt=""></a>
+
+            <img id="QR_code" class="bottom_wechat" src="/static/Image/wechat.png" alt="">
+
+            <div class="back display" id="pop">
+                <div class="pop_content">
+                    <img src="/static/Image/jt_qr_code.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bottom_detail">
+            <div class="bottom_detail_left">
+                <p class="bottom_phone">联系电话：<?php echo htmlentities($bottom_phone); ?></p>
+
+                <p class="bottom_address">北京校区：<?php echo htmlentities($bottom_bj); ?></p>
+                <p class="bottom_address">上海校区：<?php echo htmlentities($bottom_sh); ?></p>
+            </div>
+            <ul class="bottom_ul">
+                <li><a href="<?php echo url('/course/list'); ?>">培训课程</a></li>
+                <li><a href="<?php echo url('/introduced'); ?>">寻品介绍</a></li>
+                <li><a href="<?php echo url('/teacher/list'); ?>">讲师介绍</a></li>
+                <!-- <li><a href="<?php echo url('/address/list'); ?>">校区介绍</a></li> -->
+                <li><a href="<?php echo url('/activity/list/1'); ?>">活动资讯</a></li>
+            </ul>
+        </div>
+        <div class="bottom_line"></div>
+        <p class="copyright">Copyright © 2022-2023 北京寻品咖啡有限责任公司 All Rights Reserved. 版权备案号：京ICP备2022018085号</p>
+    </div>
+
+
+</body>
+<script src="/static/js/jquery-2.1.1.min.js"></script>
+<script>
+    $(".copyright").on('click', function() {
+        window.location.href = "https://beian.miit.gov.cn/";
+    });
+    $('#QR_code').on('click', function() {
+        $("#pop").removeClass("display");
+    });
+    $(".back").on('click', function() {
+        $("#pop").addClass("display");
+    });
+    $(window).load(function() {
+        $('.btn-nav').on('click tap', function() {
+            $('.nav-content').toggleClass('showNav hideNav').removeClass('hidden');
+            $(this).toggleClass('animated');
+            var is_animated = $(".animated").length;
+            if (is_animated) {
+                $('.phone_nav img').attr('src', '/static/Image/light_logo.png');
+
+            } else {
+                $('.phone_nav img').attr('src', '/static/Image/dark_logo.png');
+
+
+            }
+        });
+    });
+    $(".item_skin").bind('click', function(index) {
+        $('.btn-nav').click();
+
+        var index = $(".item_skin").index($(this));
+        setTimeout(() => {
+            switch (index) {
+                case 0:
+                    window.location.href = "<?php echo url('/home'); ?>";
+                    break;
+
+                case 1:
+                    window.location.href = "<?php echo url('/introduced'); ?>";
+                    break;
+
+                case 2:
+                    window.location.href = "<?php echo url('/course/list'); ?>";
+                    break;
+
+                case 3:
+                    window.location.href = "<?php echo url('/teacher/list'); ?>";
+                    break;
+                    // case 4:
+                    //     window.location.href = "<?php echo url('/address/list'); ?>";
+                    //     break;
+
+                case 4:
+                    window.location.href = "<?php echo url('/activity/list/1'); ?>";
+                    break;
+
+                default:
+                    break;
+            }
+        }, 500);
+    })
+</script>
+
+</html>

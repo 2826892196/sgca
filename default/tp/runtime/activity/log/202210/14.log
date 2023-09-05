@@ -1,0 +1,6 @@
+[2022-10-14T13:46:23+08:00][sql] CONNECT:[ UseTime:0.000394s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2022-10-14T13:46:23+08:00][sql] SHOW FULL COLUMNS FROM `information` [ RunTime:0.001288s ]
+[2022-10-14T13:46:23+08:00][sql] SELECT * FROM `information` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000323s ]
+[2022-10-14T13:46:23+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.001012s ]
+[2022-10-14T13:46:23+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000274s ]
+[2022-10-14T13:46:23+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000268s ]

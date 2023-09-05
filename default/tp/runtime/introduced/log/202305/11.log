@@ -1,0 +1,20 @@
+[2023-05-11T00:25:46+08:00][sql] CONNECT:[ UseTime:0.000442s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2023-05-11T00:25:46+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.001467s ]
+[2023-05-11T00:25:46+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000397s ]
+[2023-05-11T00:25:46+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000334s ]
+[2023-05-11T09:53:29+08:00][sql] CONNECT:[ UseTime:0.000394s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2023-05-11T09:53:29+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.001359s ]
+[2023-05-11T09:53:29+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000256s ]
+[2023-05-11T09:53:29+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000199s ]
+[2023-05-11T14:03:08+08:00][sql] CONNECT:[ UseTime:0.000398s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2023-05-11T14:03:08+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.001411s ]
+[2023-05-11T14:03:08+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000276s ]
+[2023-05-11T14:03:08+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000247s ]
+[2023-05-11T17:03:16+08:00][sql] CONNECT:[ UseTime:0.000392s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2023-05-11T17:03:16+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.001225s ]
+[2023-05-11T17:03:16+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000276s ]
+[2023-05-11T17:03:16+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000222s ]
+[2023-05-11T17:07:18+08:00][sql] CONNECT:[ UseTime:0.000433s ] mysql:host=localhost;port=3316;dbname=coffee;charset=utf8
+[2023-05-11T17:07:18+08:00][sql] SHOW FULL COLUMNS FROM `address` [ RunTime:0.001290s ]
+[2023-05-11T17:07:18+08:00][sql] SELECT * FROM `address` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000282s ]
+[2023-05-11T17:07:18+08:00][sql] SELECT * FROM `address` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000221s ]
